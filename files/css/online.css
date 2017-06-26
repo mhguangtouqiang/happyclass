@@ -1,0 +1,93 @@
+body {
+	font-family: 'Microsoft YaHei'
+}
+
+#kok {
+	width: 100%;
+	height: 330px;
+	float: left;
+/* border:1px solid orange; */
+	background: url(../../images/13212.png) 0 0 no-repeat;
+	position: relative;
+}
+
+.qiehuan {
+	width: 1024px;
+	height: 330px;
+	position: relative;
+	overflow: hidden;
+}
+
+.qiehuan li {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+	width: 100%;
+	height: 330px;
+}
+
+.qiehuan li img {
+	width: 100%;
+	height: 535px;
+}
+
+#coa {
+	width: 100%;
+	height: 1000px;
+	float: left;
+/* border:1px solid orange; */
+	background: #fff;
+}
+
+#coa2 {
+	width: 100%;
+	height: 1000px;
+	float: left;
+/* border:1px solid orange; */
+	background: #004da4;
+}
+
+#coa3 {
+	width: 100%;
+	height: 1000px;
+	float: left;
+/* border:1px solid orange; */
+	background: #fff;
+}
+
+#coa4 {
+	width: 100%;
+	height: 1000px;
+	float: left;
+/* border:1px solid orange; */
+	background: #ffb700;
+}
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+	width: 950px;
+	margin:19px auto;
+	height: auto;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+	text-align: center;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+	text-align: center;
+}
+	

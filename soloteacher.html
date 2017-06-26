@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一对一老师</title>
+	<link rel="stylesheet" href="files/css/reset.css">
+	<link rel="stylesheet" href="files/css/soloteacher.css">
+	<script src="files/js/jquery-1.8.3.min.js"></script>
+	<script src="files/js/jquery.easing.min.js"></script>
+	<meta http-equiv="x-ua-compatible" content="IE=7; IE=9" />
+	
+</head>
+<body>
+			<div id="out">
+
+			</div>
+			<div id="screen">
+				<div style="width: 1024px;height: 48px;border-bottom: 2px solid #828282;">
+					<div style="width: 124px;height: 46px;background: #1c1c1c;line-height: 46px;float: left;margin-top: 2px;">
+						<p style="font-size: 18px;color: #fff;font-weight: bold;text-align: center;">所有老师</p>
+					</div>
+					
+
+				</div>
+				
+			</div>
+			<div class="banei" style="width: 1024px;height: 135px;margin:0 auto;cursor: pointer;">
+						
+						<div class="hipe" style="width: 1024px;height: 48px;float: left;">
+						<div style="width: 86px;height: 16px;float: left;">
+									<p style="font-size: 14px;color:#828282;">年级</p>
+								</div>
+							<ul id="puios" style="width: 930px;height: 52px;float: left;">
+								
+								<li class="yss" style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: 33px;height: 19px;">不限</p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>一年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>二年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>三年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>四年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>五年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>六年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>初一</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>初二</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>初三</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>高一</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>高二</a></p>
+								</li>
+								<li style="width: 30px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>高三</a></p>
+								</li>
+								<div style="width: 90px;height: 22px;float: right;margin-top: -1px;">
+								
+								<div style="float: right;width: 40px;height: 22px;background: #fff;line-height: 25px;">
+								<p class="sssw" style="font-size: 12px;color:#828282;text-align: center;float: left;">多选</p>
+								
+								</div>
+							</div>
+						</ul>
+							
+							
+				</div>
+				<div class="hipe2" style="width: 1024px;height: 70px;float: left;border:1px solid #ccc;position: relative;display: none;">
+						<div style="width: 86px;height: 16px;float: left;">
+									<p style="font-size: 14px;color:#828282;">年级</p>
+								</div>
+							<ul id="puios" style="width: 930px;height: 52px;float: left;">
+								
+								<li class="yss" style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;width: 33px;height: 19px;">不限</p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>一年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>二年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>三年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>四年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>五年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>六年级</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>初一</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>初二</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>初三</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>高一</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>高二</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+									<input class="ssswInput" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;width: auto;height: 19px;"><a>高三</a></p>
+								</li>
+								<div style="width: 90px;height: 22px;float: right;margin-top: -1px;">
+								
+								
+							</div>
+						</ul>
+						<p  class="sjsj"  style="width: 50px;height: 25px;background-color: orange;position: absolute;bottom: 5px;left: 45%;font-size: 12px;font-weight: bold;text-align: center;line-height: 25px;border-radius: 10px;color: #fff;">确定</p>
+							
+							
+				</div>
+				<div id="uiosed" style="width: 1024px;height: 60px;float: left;overflow: hidden;">
+				<div style="width: 86px;height: 16px;float: left;">
+									<p style="font-size: 14px;color:#828282;">科目</p>
+								</div>
+							<ul class="iosic" style="width: 1017px;height: 45px;">
+								
+								<li class="yss2" style="width: 67px;height: 16px;float: left;">
+									<p  style="font-size: 14px;">不限</p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>语文</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>数学</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>英语</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>物理</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>化学</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>地理</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>生物</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>历史</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>政治</a></p>
+								</li>
+								
+								
+
+								
+								<div style="width: 90px;height: 22px;float: right;margin-top: -1px;">
+								<div style="float: right;width: 40px;height: 22px;background: #fff;line-height: 25px;">
+								<p class="sssw2" style="font-size: 12px;color:#828282;text-align: center;float: left;">多选</p>
+								
+								</div>
+							</div>
+
+								
+							</ul>
+							<ul class="iosic2" style="width: 1017px;height: 50px;border:1px solid #ccc;position: relative;display: none
+							;">
+								<li style="width: 86px;height: 16px;float: left;">
+									
+									<p style="font-size: 14px;color:#828282;">科目</p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;color:#ed6912;">不限</p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+								<input class="sssw2Input" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;color:#202020;"><a>语文</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+								<input class="sssw2Input" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;color:#202020;"><a>数学</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+								<input class="sssw2Input" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;color:#202020;"><a>英语</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+								<input class="sssw2Input" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;color:#202020;"><a>物理</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+								<input class="sssw2Input" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;color:#202020;"><a>化学</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+								<input class="sssw2Input" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;color:#202020;"><a>地理</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+								<input class="sssw2Input" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;color:#202020;"><a>生物</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+								<input class="sssw2Input" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;color:#202020;"><a>历史</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;position: relative;">
+								<input class="sssw2Input" type="checkbox" style="width: 20px;position: absolute;left: -20px;top:4px;">
+									<p style="font-size: 14px;color:#202020;"><a>政治</a></p>
+								</li>
+								
+								
+
+								
+								<div style="width: 90px;height: 22px;float: right;margin-top: -1px;">
+								
+							</div>
+							<p  class="sjsj2"  style="width: 50px;height: 25px;background-color: orange;position: absolute;bottom: 2px;left: 45%;font-size: 12px;font-weight: bold;text-align: center;line-height: 25px;border-radius: 10px;color: #fff;">确定</p>
+
+								
+							</ul>
+							
+								
+							<ul id="qosic" style="width: 1024px;height: 45px;margin-top: 5px;display: none;">
+							<li style="width: 86px;height: 16px;float: left;">
+									<p style="font-size: 14px;color:#828282;">教龄</p>
+								</li>
+
+								<li class="yss3" style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;">不限</p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>一年</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>两年</a></p>
+								</li>
+								<li style="width: 90px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>一线教师</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>五年</a></p>
+								</li>
+								<li style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>10年以上</a></p>
+								</li>
+								
+								<div style="width: 90px;height: 22px;float: right;margin-top: -1px;">
+								
+							</div>
+
+								
+							</ul>
+							
+								<ul id="bosic" style="width: 1024px;height: 45px;display: none;">
+								<li style="width: 86px;height: 16px;float: left;">
+									<p style="font-size: 14px;color:#828282;">人气</p>
+								</li>
+								
+								<li class="yss4  wlo" style="width: 67px;height: 16px;float: left;">
+									<p style="font-size: 14px;">不限</p>
+								</li>
+								<li class="wlo" style="width: 130px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>学校优秀教师</a></p>
+								</li>
+								<li  class="wlo" style="width: 130px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>内部推荐教师</a></p>
+								</li>
+								<li  class="wlo" style="width: 130px;height: 16px;float: left;">
+									<p style="font-size: 14px;"><a>最受学生欢迎教师 </a></p>
+								</li>
+								
+								
+								<div style="width: 90px;height: 22px;float: right;margin-top: -1px;">
+								
+							</div>
+
+								
+							</ul>
+							
+							
+				</div>
+						<div class="nik" style="width: 1024px;height: 16px;float: left;;cursor: pointer;">
+									<p class="wop"style="font-size: 16px;color:#828282;margin:0 auto;width: 170px;height: 16px;">更多筛选条件 ></p>
+									
+
+
+								</div>
+								<div class="nik2" style="width: 1024px;height: 16px;float: left;;cursor: pointer;display: none;">
+									<p style="font-size: 16px;color: #828282;margin:0 auto;width: 170px;height: 16px;">收起筛选
+									<img src="images/asda2.png" style="margin:3px auto;">
+									</p>
+									
+								</div>
+								
+					</div>
+
+
+
+
+					<div id="yjava" style="width: 1024px;height: auto;margin:0 auto;">
+			<div class="xij" style="width: 1024px;height: 50px;border:1px solid #ccc;float: left;margin-top: 10px;">
+							 <div style="float: left;">
+								<div style="width: 89px;height: 50px;border-right: 1px solid #ccc;text-align: center;line-height: 50px;float: left;">
+									<p style="font-size: 14px;color:#ed6912;">
+										默认顺序
+									</p>
+								</div>
+								<div style="width: 60px;height: 50px;text-align: center;line-height: 50px;float: left;">
+									<p style="font-size: 14px;color:#333;">
+										人气
+									</p>
+								</div>
+								<div style="width: 60px;height: 50px;text-align: center;line-height: 50px;float: left;">
+									<p style="font-size: 14px;color:#333;">
+										教龄
+									</p>
+								</div>
+							</div>
+							<div style="float: right;width: 435px;height: auto;margin-top: 5px;">
+								<div style="float: left;">
+								<div class="left2" style="width: 198px;height:39px;float: right;">
+							 	<input type="bottom" placeholder="输入你要找的课程" style="width: 176px;height:30px;padding-left: 6px;float: left;border:1px solid #dfdfdd;margin-top: 6px;" id="iser">
+							 	
+							 	
+							 	<img src="images/12_03.jpg" style="width: 15px;height:15px;cursor: pointer;float: left;margin:14px -21px;">
+							 	</div>
+
+							
+								</div>
+								<div style="width: 150px;height: 26px;float: left;margin-top: 8px;text-align: center;line-height: 26px;">
+									<span style="font-size: 14px;color: #333;font-weight: bold;">共有</span>
+									<span style="font-size: 14px;color: #ed6912;font-weight: bold;">290</span>
+									<span style="font-size: 14px;color: #333;font-weight: bold;">位老师</span>
+								</div>
+								<ul style="width: 70px;height: 26px;float: left;margin-top: 10px;">
+									<li  id="wenst" style="float: left;cursor: pointer;width: 20px;height: 20px;">
+										<div  class="hhd" style="background: url(images/btn_list_selected.png) 0 0 no-repeat;width: 20px;height: 20px;"></div>
+									</li>
+									<li  id="wenst2"  style="float: left;margin-top: -1px;margin-left: 10px;cursor: pointer;width: 20px;height: 20px;">
+										<div  class="hhb"  style="background: url(images/btn_gongge_nor.png) 0 0 no-repeat;width: 20px;height: 20px;"></div>
+									</li>
+								</ul>
+
+								</div>
+							</div>
+					
+			<div id="teacher" class="sok" >
+				<ul style="width: 950px;margin:0 auto;height: auto;">
+					<li style="width: 950px;height: 228px;float: left;">
+						<div style="width: 650px;height: 172px;float: left;">
+							<div style="width: 165px;height: 172px;float: left;">
+								<img src="images/pic45341.png">
+							</div>
+							<div style="width: 445px;height: 103px;float: left;margin-top: 30px;margin-left: 10px;">
+								<div style="width: 233px;height: 103px;float: left;">
+								  <div style="width: 233px;">
+									<span style="font-size: 14px;color: #828282;">姓名：</span>
+									<span style="font-size: 14px;color: #ed6912;">体验老师</span>
+								  </div>
+								  <div style="width: 233px;margin-top: 10px;">
+									<span style="font-size: 14px;color: #828282;">可辅导：</span>
+									<span style="font-size: 14px;color: #ed6912;">小学&nbsp;初中&nbsp;高中&nbsp;大学</span>
+								  </div>
+								   <div style="width: 233px;margin-top: 10px;">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star1.png">
+								  </div>
+
+								</div>
+								<div style="width: 128px;height: 45px;float: left;margin-top: 30px;text-align: center;margin-left: 30px;">
+								  <div style="width: 128px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">学校：</p>
+									<p style="font-size: 14px;color: #333;float: left;">开心课堂</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">科目：</p>
+									<p style="font-size: 14px;color: #333;float: left;">在线客服</p>
+									</div>
+									
+								  
+								</div>
+							</div>
+						</div>
+						<div style="float: right;margin-top: 70px;cursor: pointer;">
+							<img src="images/appointment1.png">
+						</div>
+					</li>
+					<li style="width: 950px;height: 228px;float: left;">
+						<div style="width: 650px;height: 172px;float: left;">
+							<div style="width: 165px;height: 172px;float: left;position: relative;">
+							<img src="images/fghg.png" style="position: absolute;top:0;right: 1px;">
+								<img src="images/pi33c2.png">
+							</div>
+							<div style="width: 445px;height: 103px;float: left;margin-top: 30px;margin-left: 10px;">
+								<div style="width: 233px;height: 103px;float: left;position: relative;">
+								
+								  <div style="width: 233px;">
+									<span style="font-size: 14px;color: #828282;">姓名：</span>
+									<span style="font-size: 14px;color: #ed6912;">萍老师</span>
+								  </div>
+								  <div style="width: 233px;margin-top: 10px;">
+									<span style="font-size: 14px;color: #828282;">可辅导：</span>
+									<span style="font-size: 14px;color: #ed6912;">小学&nbsp;初中&nbsp;高中</span>
+								  </div>
+								   <div style="width: 233px;margin-top: 10px;">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star1.png">
+								  </div>
+
+								</div>
+								<div style="width: 128px;height: 45px;float: left;margin-top: 30px;text-align: center;margin-left: 30px;">
+								   <div style="width: 128px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">学校：</p>
+									<p style="font-size: 14px;color: #333;float: left;">清华大学</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">科目：</p>
+									<p style="font-size: 14px;color: #333;float: left;">地理</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">教龄：</p>
+									<p style="font-size: 14px;color: #333;float: left;">3年</p>
+									</div>
+								  
+								</div>
+							</div>
+						</div>
+						<div style="float: right;margin-top: 70px;">
+							<img src="images/appointment2.png">
+						</div>
+					</li>
+					<li style="width: 950px;height: 228px;float: left;">
+						<div style="width: 650px;height: 172px;float: left;">
+							<div style="width: 165px;height: 172px;float: left;">
+								<img src="images/pic223.png">
+							</div>
+							<div style="width: 445px;height: 103px;float: left;margin-top: 30px;margin-left: 10px;">
+								<div style="width: 233px;height: 103px;float: left;">
+								  <div style="width: 233px;">
+									<span style="font-size: 14px;color: #828282;">姓名：</span>
+									<span style="font-size: 14px;color: #ed6912;">宇文老师</span>
+								  </div>
+								  <div style="width: 233px;margin-top: 10px;">
+									<span style="font-size: 14px;color: #828282;">可辅导：</span>
+									<span style="font-size: 14px;color: #ed6912;">初中&nbsp;高中&nbsp;大学</span>
+								  </div>
+								   <div style="width: 233px;margin-top: 10px;">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star1.png">
+								  </div>
+
+								</div>
+								<div style="width: 128px;height: 45px;float: left;margin-top: 5px;text-align: center;margin-left: 30px;">
+								  <div style="width: 128px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">学校：</p>
+									<p style="font-size: 14px;color: #333;float: left;">江苏</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">科目：</p>
+									<p style="font-size: 14px;color: #333;float: left;">地理</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">教龄：</p>
+									<p style="font-size: 14px;color: #333;float: left;">十五年</p>
+									</div>
+								  
+								</div>
+							</div>
+						</div>
+						<div style="float: right;margin-top: 70px;cursor: pointer;">
+							<img src="images/appointment1.png">
+						</div>
+					</li>
+					<li style="width: 950px;height: 228px;float: left;">
+						<div style="width: 650px;height: 172px;float: left;">
+							<div style="width: 165px;height: 172px;float: left;">
+								<img src="images/pic45341.png">
+							</div>
+							<div style="width: 445px;height: 103px;float: left;margin-top: 30px;margin-left: 10px;">
+								<div style="width: 233px;height: 103px;float: left;">
+								  <div style="width: 233px;">
+									<span style="font-size: 14px;color: #828282;">姓名：</span>
+									<span style="font-size: 14px;color: #ed6912;">体验老师</span>
+								  </div>
+								  <div style="width: 233px;margin-top: 10px;">
+									<span style="font-size: 14px;color: #828282;">可辅导：</span>
+									<span style="font-size: 14px;color: #ed6912;">小学&nbsp;初中&nbsp;高中&nbsp;大学</span>
+								  </div>
+								   <div style="width: 233px;margin-top: 10px;">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star1.png">
+								  </div>
+
+								</div>
+								<div style="width: 128px;height: 45px;float: left;margin-top: 30px;text-align: center;margin-left: 30px;">
+								  <div style="width: 128px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">学校：</p>
+									<p style="font-size: 14px;color: #333;float: left;">开心课堂</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">科目：</p>
+									<p style="font-size: 14px;color: #333;float: left;">在线客服</p>
+									</div>
+									
+								  
+								</div>
+							</div>
+						</div>
+						<div style="float: right;margin-top: 70px;cursor: pointer;">
+							<img src="images/appointment1.png">
+						</div>
+					</li>
+					<li style="width: 950px;height: 228px;float: left;">
+						<div style="width: 650px;height: 172px;float: left;">
+							<div style="width: 165px;height: 172px;float: left;position: relative;">
+								<img src="images/pi33c2.png">
+								<img src="images/fghg.png" style="position: absolute;top:0;right: 1px;">
+							</div>
+							<div style="width: 445px;height: 103px;float: left;margin-top: 30px;margin-left: 10px;">
+								<div style="width: 233px;height: 103px;float: left;">
+								  <div style="width: 233px;">
+									<span style="font-size: 14px;color: #828282;">姓名：</span>
+									<span style="font-size: 14px;color: #ed6912;">萍老师</span>
+								  </div>
+								  <div style="width: 233px;margin-top: 10px;">
+									<span style="font-size: 14px;color: #828282;">可辅导：</span>
+									<span style="font-size: 14px;color: #ed6912;">小学&nbsp;初中&nbsp;高中</span>
+								  </div>
+								   <div style="width: 233px;margin-top: 10px;">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star1.png">
+								  </div>
+
+								</div>
+								<div style="width: 128px;height: 45px;float: left;margin-top: 30px;text-align: center;margin-left: 30px;">
+								   <div style="width: 128px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">学校：</p>
+									<p style="font-size: 14px;color: #333;float: left;">清华大学</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">科目：</p>
+									<p style="font-size: 14px;color: #333;float: left;">地理</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">教龄：</p>
+									<p style="font-size: 14px;color: #333;float: left;">3年</p>
+									</div>
+								  
+								</div>
+							</div>
+						</div>
+						<div style="float: right;margin-top: 70px;">
+							<img src="images/appointment2.png">
+						</div>
+					</li>
+					<li style="width: 950px;height: 228px;float: left;">
+						<div style="width: 650px;height: 172px;float: left;">
+							<div style="width: 165px;height: 172px;float: left;">
+								<img src="images/pic223.png">
+							</div>
+							<div style="width: 445px;height: 103px;float: left;margin-top: 30px;margin-left: 10px;">
+								<div style="width: 233px;height: 103px;float: left;">
+								  <div style="width: 233px;">
+									<span style="font-size: 14px;color: #828282;">姓名：</span>
+									<span style="font-size: 14px;color: #ed6912;">宇文老师</span>
+								  </div>
+								  <div style="width: 233px;margin-top: 10px;">
+									<span style="font-size: 14px;color: #828282;">可辅导：</span>
+									<span style="font-size: 14px;color: #ed6912;">初中&nbsp;高中&nbsp;大学</span>
+								  </div>
+								   <div style="width: 233px;margin-top: 10px;">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star1.png">
+								  </div>
+
+								</div>
+								<div style="width: 128px;height: 45px;float: left;margin-top: 5px;text-align: center;margin-left: 30px;">
+								  <div style="width: 128px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">学校：</p>
+									<p style="font-size: 14px;color: #333;float: left;">江苏</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">科目：</p>
+									<p style="font-size: 14px;color: #333;float: left;">地理</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">教龄：</p>
+									<p style="font-size: 14px;color: #333;float: left;">十五年</p>
+									</div>
+								  
+								</div>
+							</div>
+						</div>
+						<div style="float: right;margin-top: 70px;cursor: pointer;">
+							<img src="images/appointment1.png">
+						</div>
+					</li>
+					<li style="width: 950px;height: 228px;float: left;">
+						<div style="width: 650px;height: 172px;float: left;">
+							<div style="width: 165px;height: 172px;float: left;">
+								<img src="images/pic45341.png">
+							</div>
+							<div style="width: 445px;height: 103px;float: left;margin-top: 30px;margin-left: 10px;">
+								<div style="width: 233px;height: 103px;float: left;">
+								  <div style="width: 233px;">
+									<span style="font-size: 14px;color: #828282;">姓名：</span>
+									<span style="font-size: 14px;color: #ed6912;">体验老师</span>
+								  </div>
+								  <div style="width: 233px;margin-top: 10px;">
+									<span style="font-size: 14px;color: #828282;">可辅导：</span>
+									<span style="font-size: 14px;color: #ed6912;">小学&nbsp;初中&nbsp;高中&nbsp;大学</span>
+								  </div>
+								   <div style="width: 233px;margin-top: 10px;">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star1.png">
+								  </div>
+
+								</div>
+								<div style="width: 128px;height: 45px;float: left;margin-top: 30px;text-align: center;margin-left: 30px;">
+								  <div style="width: 128px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">学校：</p>
+									<p style="font-size: 14px;color: #333;float: left;">开心课堂</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">科目：</p>
+									<p style="font-size: 14px;color: #333;float: left;">在线客服</p>
+									</div>
+									
+								  
+								</div>
+							</div>
+						</div>
+						<div style="float: right;margin-top: 70px;cursor: pointer;">
+							<img src="images/appointment1.png">
+						</div>
+					</li>
+					<li style="width: 950px;height: 228px;float: left;">
+						<div style="width: 650px;height: 172px;float: left;">
+							<div style="width: 165px;height: 172px;float: left;position: relative;">
+								<img src="images/pi33c2.png">
+								<img src="images/fghg.png" style="position: absolute;top:0;right: 1px;">
+							</div>
+							<div style="width: 445px;height: 103px;float: left;margin-top: 30px;margin-left: 10px;">
+								<div style="width: 233px;height: 103px;float: left;">
+								  <div style="width: 233px;">
+									<span style="font-size: 14px;color: #828282;">姓名：</span>
+									<span style="font-size: 14px;color: #ed6912;">萍老师</span>
+								  </div>
+								  <div style="width: 233px;margin-top: 10px;">
+									<span style="font-size: 14px;color: #828282;">可辅导：</span>
+									<span style="font-size: 14px;color: #ed6912;">小学&nbsp;初中&nbsp;高中</span>
+								  </div>
+								   <div style="width: 233px;margin-top: 10px;">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star1.png">
+								  </div>
+
+								</div>
+								<div style="width: 128px;height: 45px;float: left;margin-top: 30px;text-align: center;margin-left: 30px;">
+								   <div style="width: 128px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">学校：</p>
+									<p style="font-size: 14px;color: #333;float: left;">清华大学</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">科目：</p>
+									<p style="font-size: 14px;color: #333;float: left;">地理</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">教龄：</p>
+									<p style="font-size: 14px;color: #333;float: left;">3年</p>
+									</div>
+								  
+								</div>
+							</div>
+						</div>
+						<div style="float: right;margin-top: 70px;">
+							<img src="images/appointment2.png">
+						</div>
+					</li>
+					<li style="width: 950px;height: 228px;float: left;">
+						<div style="width: 650px;height: 172px;float: left;">
+							<div style="width: 165px;height: 172px;float: left;">
+								<img src="images/pic223.png">
+							</div>
+							<div style="width: 445px;height: 103px;float: left;margin-top: 30px;margin-left: 10px;">
+								<div style="width: 233px;height: 103px;float: left;">
+								  <div style="width: 233px;">
+									<span style="font-size: 14px;color: #828282;">姓名：</span>
+									<span style="font-size: 14px;color: #ed6912;">宇文老师</span>
+								  </div>
+								  <div style="width: 233px;margin-top: 10px;">
+									<span style="font-size: 14px;color: #828282;">可辅导：</span>
+									<span style="font-size: 14px;color: #ed6912;">初中&nbsp;高中&nbsp;大学</span>
+								  </div>
+								   <div style="width: 233px;margin-top: 10px;">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star.png">
+									<img src="images/star1.png">
+								  </div>
+
+								</div>
+								<div style="width: 128px;height: 45px;float: left;margin-top: 5px;text-align: center;margin-left: 30px;">
+								  <div style="width: 128px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">学校：</p>
+									<p style="font-size: 14px;color: #333;float: left;">江苏</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">科目：</p>
+									<p style="font-size: 14px;color: #333;float: left;">地理</p>
+									</div>
+									<div style="width: 128px;margin-top: 10px;float: left;">
+									<p style="font-size: 14px;color: #828282;float: left;">教龄：</p>
+									<p style="font-size: 14px;color: #333;float: left;">十五年</p>
+									</div>
+								  
+								</div>
+							</div>
+						</div>
+						<div style="float: right;margin-top: 70px;cursor: pointer;">
+							<img src="images/appointment1.png">
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="sok2" style="display: none;margin-top: 40px;float: left;width: 1024px;height: auto;">
+				<iframe width=100% height=2000px frameborder=0 scrolling=no src="GeGong.html" style="float: left;">
+										
+									</iframe>
+			</div>
+			<div style="width: 1024px;height: 60px;float: left;;">
+				<div class="fanye" style="width: 602px;height:40px;border:1px solid #ccc;float: left;background:#f2f2f5;position: relative;-webkit-user-select: none;left: 180px;margin-top: 40px;">
+						<div class="cx2" style="width: 480px;height: 18px;margin: 0 auto;margin-top: 10px;">
+						
+						<div class="himan" style="width: 289px;height:18px;float: left;">
+						<div class="zf2" style="width: 70px;height:18px;float: left;border-right:1px solid #d9d9d9;text-align: center;cursor: pointer;">
+							<span style="cursor: pointer;font-weight: bold;color:#666;"><</span>
+							<span style="color:#333333;font-size: 13px;line-height: 19px;font-weight: bold;cursor:pointer; -webkit-user-select: none;">上一页</span>
+						</div>
+						<ul class="oxu2" style="width: 125px;height: 14px;float: left;margin:3px 10px; -webkit-user-select: none;">
+						<li class="ys2">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+
+							
+						</ul>
+						<div class="yf2"style="width: 70px;height:18px;float: right;border-left:1px solid #d9d9d9;text-align: center;cursor: pointer;">
+							<span style="color:#333333;font-size: 13px;line-height: 19px;font-weight: bold;cursor:pointer; -webkit-user-select: none;">下一页</span>
+							<span style="cursor: pointer;font-weight: bold;color:#666;">></span>
+						</div>
+						
+
+							
+						</div>
+						<div  class="ods" style="width: 190px;height: 22px;float: left;line-height: 19px;">
+							<div style="float: left;">
+							<p style="font-size: 12px;color:#333;float: left;width: 54px;">共100页</p>
+							<p style="font-size: 12px;color:#333;float: left;width: 30px;">到第</p>
+							<input type="text"  maxlength="4" class="sd" style="width: 26px;height: 14px;">
+							</div>
+							<p style="font-size: 12px;color:#333;float: left;width: 22px;margin-left: 5px;">页</p>
+							<div style="cursor: pointer;float: left;width:30px;height: 17px;border:1px solid #ccc;text-align: center;line-height: 17px;;background: #fff;">
+							<p style="font-size: 12px;color:#333;float: left;width: 30px;">确定</p>
+							</div>
+
+							
+						</div>
+						</div>
+						</div>
+
+			</div>
+			</div>
+	</div>
+</body>
+<script src="files/js/soloteacher.js"></script>
+</html>

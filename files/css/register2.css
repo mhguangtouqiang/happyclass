@@ -1,0 +1,47 @@
+body {
+	font-family: 'Microsoft YaHei'
+}
+
+#box {
+	width: 100%;
+	height: auto;
+}
+
+.front {
+	width: 1024px;
+	height: 54px;
+	background: #1f1f1f;
+}
+
+.back {
+	width: 1024px;
+	height: 54px;
+	background: #1f1f1f;
+}
+
+.right {
+	width: 1024px;
+	height: 54px;
+	background: #1f1f1f;
+}
+
+.left {
+	width: 1024px;
+	height: 54px;
+	background: #1f1f1f;
+}
+
+#spo {
+	width: 1024px;
+	height: 54px;
+	overflow: hidden;
+}
+
+.dsf {
+	width: 1024px;
+	height: 1000px;
+}
+
+.dsf li {
+	float: left;
+}

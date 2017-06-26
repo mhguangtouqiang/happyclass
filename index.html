@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <!-- 网站为开心课堂，在title中加入logo -->        
+        <title>
+            开心课堂
+        </title>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="files/css/reset.css">
+        <link rel="stylesheet" href="files/css/index.css">
+       
+        <script src="files/js/jquery-1.8.3.min.js">
+        </script>
+        <script src="files/js/jquery.easing.min.js">
+        </script>
+     
+        <meta http-equiv="x-ua-compatible" content="IE=7; IE=9" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        
+    </head>
+    
+    <body>
+        <div id="prompt" style="background: rgba(0,0,0,0.8);width: 100%;height: 1138px;position: fixed;z-index: 10000;display: none;">
+            <div class="oop" style="width: 360px;height: 160px;position: absolute;left:40%;top:300px;background-color: #f4f4f4;border:2px solid #ccc;border-radius: 10px;">
+                <p style="width: auto;height: 100px;font-size: 14px;color: #333;font-weight: bold;text-align: center;line-height: 100px;">
+                    请输入正确的手机号！
+                </p>
+                <div style="width: 70px;height: 30px;background-color: orange;text-align: center;line-height: 30px;margin:0 auto;border-radius: 10px;cursor: pointer;">
+                    <span style="color: #333;font-weight: bold;">
+                        确定
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="qiss2" style="background: rgba(0,0,0,0.8);width: 100%;height: 1138px;position: fixed;z-index: 10000;display: none;">
+		
+			<div class="lcop2"style="width: 400px;height: 250px;position: absolute;left:38%;top:300px;background-color: #f4f4f4;border:2px solid #ccc;border-radius: 10px;">
+					<div style="width: 400px;height: 45px;border-bottom:1px solid orange;line-height: 40px;">
+						<p style="color:orange;font-size: 2em;margin-top: 5px;margin-left: 15px;">高中物理第一课</p>
+						<p class="kpo" style="color:#333;font-size: 2em;margin-top: 5px;margin-left: 15px;position: absolute;right: 21px;top:-2px;cursor: pointer;">x</p>
+					</div>
+					<div style="width: 400px;height: 55px;border-bottom: 1px solid #ccc;">
+					  <div style="width: auto;height: 17px;position: relative;top:20px;left:32px;">
+						<input type="radio"  value="1" checked / style="float: left;">
+						<div style="font-size: 1.8em;float: left;margin-left: 10px;color: #333;margin-top: -8px;">
+						<span >您应付金额为</span>
+						<span style="color: red;">0.05</span>
+						<span >元</span>
+
+						</div>
+					</div>
+					
+			</div>
+			
+						
+					<div style="width: 307px;height: 130px;position: relative;left: 45px;">
+						<div style="width: 415px;height: 30px;margin-top: 10px;">
+							<span style="font-size: 1.8em;color: #333">手机号：</span>
+							<input class="yxr" placeholder="手机号：" maxlength="11"  type="text" style="height: 25px;color: #666;font-size: 1.5em;width: 200px;">
+						</div>
+						<div style="width: 415px;height: 30px;margin-top: 10px;">
+							<span style="font-size: 1.8em;color: #333">验证码：</span>
+							<input type="text" placeholder="验证码：" maxlength="6" style="height: 25px;color: #666;position: relative;font-size: 1.5em;width: 200px;">
+							<input type="submit" value="获取验证码" style="position: absolute;right:15px;top:47px;font-size: 1.3em;width: 100px;height: 20px;">
+						</div>
+						<div style="width: 104px;height: 30px;background-color: orange;position: absolute;border-radius: 5px;text-align: center;line-height: 30px;right: 2px;top:85px;">
+						<p style="font-size: 1.5em;color: #fff;font-weight: bold;cursor: pointer;">提交</p>
+					</div>
+					</div>
+					
+					</div>
+
+			</div>
+        <div id="qiss" style="background: rgba(0,0,0,0.8);width: 100%;height: 1138px;position: fixed;z-index: 10000;display: none;">
+            <div class="lcop" style="width: 400px;height: 250px;position: absolute;left:38%;top:300px;background-color: #f4f4f4;border:2px solid #ccc;border-radius: 10px;">
+                <div style="width: 400px;height: 45px;border-bottom:1px solid orange;line-height: 40px;">
+                    <p style="color:orange;font-size: 2em;margin-top: 5px;margin-left: 15px;">
+                        高中物理第一课
+                    </p>
+                    <p class="kpo" style="color:#333;font-size: 2em;margin-top: 5px;margin-left: 15px;position: absolute;right: 21px;top:-2px;cursor: pointer;">
+                        x
+                    </p>
+                </div>
+                <div style="width: 400px;height: 55px;border-bottom: 1px solid #ccc;">
+                    <div style="width: auto;height: 17px;position: relative;top:20px;left:32px;">
+                        <input type="radio" value="1" checked / style="float: left;">
+                        <div style="font-size: 1.8em;float: left;margin-left: 10px;color: #333;margin-top: -8px;">
+                            <span>
+                                您应付金额为
+                            </span>
+                            <span style="color: red;">
+                                0.05
+                            </span>
+                            <span>
+                                元
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 307px;height: 130px;position: relative;left: 45px;">
+                    <div style="width: 415px;height: 30px;margin-top: 10px;">
+                        <span style="font-size: 1.8em;color: #333">
+                            手机号：
+                        </span>
+                        <input class="yxr" placeholder="手机号：" maxlength="11" type="text" style="height: 25px;color: #666;font-size: 1.5em;width: 200px;">
+                    </div>
+                    <div style="width: 415px;height: 30px;margin-top: 10px;">
+                        <span style="font-size: 1.8em;color: #333">
+                            验证码：
+                        </span>
+                        <input type="text" placeholder="验证码：" maxlength="6" style="height: 25px;color: #666;position: relative;font-size: 1.5em;width: 200px;">
+                        <input type="submit" value="获取验证码" style="position: absolute;right:15px;top:47px;font-size: 1.3em;width: 100px;height: 20px;">
+                    </div>
+                    <div style="width: 104px;height: 30px;background-color: orange;position: absolute;border-radius: 5px;text-align: center;line-height: 30px;right: 2px;top:85px;">
+                        <p style="font-size: 1.5em;color: #fff;font-weight: bold;cursor: pointer;">
+                            提交
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="xuanfu" style="width: 100px;height: auto;position: fixed;bottom: 2px;right: 1px;z-index: 1000;">
+            <div style="width: 100px;height: auto;">
+                <a>
+                    <img src="images/online consulting.png">
+                </a>
+                <a style="cursor: pointer;" href="schoolroom.html" target="view_window">
+                    <img src="images/9999i.png">
+                </a>
+            </div>
+            <div style="width: 50px;height: 26px;display: none;cursor: pointer;margin:0 auto;padding-top: 15px;padding-bottom: 15px;"
+            id="shoow">
+                <img src="images/jiugh.png" style="width: 50px;height: 26px;">
+            </div>
+        </div>
+        <div id="all">
+            <div id="out">
+                <div class="Nav">
+                    <div class="dso">
+                        <div class="punrun" style="width: 1024px;height: 54px;">
+                            <div style="width: auto;height: 54px;float: left;">
+                                <img src="images/kaixinketang.png" style="float: left;">
+                                <div style="float: l eft;color: #333;text-align: center;margin-top: 2px;margin-left: 10px;">
+                                    <p style="font-size: 20px;">
+                                        开心课堂
+                                    </p>
+                                    <p style="font-size: 8px;">
+                                        KAIXINKETANG
+                                    </p>
+                                </div>
+                                <div style="float: left;color: #333;text-align: center;margin-left: 50px;margin-top:10px;opacity: 0;filter:alpha(opacity=0);">
+                                    <p style="color: #333;font-size: 20px;">
+                                        一对一直播教室
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="width: auto;height: 54px;float: right;">
+                                <div style="width: auto;height: 54px;float: left;">
+                                    <img src="images/45234.png" style="float: left;margin-top:5px;">
+                                    <div style="float: left;color: #333;text-align: center;margin-top: 2px;margin-left: 10px;">
+                                        <p style="font-size: 20px;">
+                                            400-0888-118
+                                        </p>
+                                        <p style="font-size: 20px;">
+                                            咨询热线
+                                        </p>
+                                    </div>
+                                </div>
+                                <div style="width: auto;height: 54px;float: left;margin-left: 20px;">
+                                    <img src="images/45453898.png" style="float: left;margin-top:10px;">
+                                    <div style="float: left;color: #333;text-align: center;margin-top: 2px;margin-left: 10px;line-height: 44px;">
+                                        <p style="font-size: 20px;">
+                                            一对一辅导
+                                        </p>
+                                    </div>
+                                </div>
+                                <div style="width: auto;height: 54px;float: left;margin-left: 20px;">
+                                    <img src="images/23123.png" style="float: left;margin-top:10px;">
+                                    <div style="float: left;color: #333;text-align: center;margin-top: 2px;margin-left: 10px;line-height: 44px;">
+                                        <p style="font-size: 20px;">
+                                            免费试听
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu">
+                <div class="ois">
+                    <div style="width: 1024px;height: 50px;margin:0 auto;">
+                        <div class="center">
+                            <ul class="opp" style="width: 522px;height: 23px;margin:16px auto;">
+                                <li class="colorw">
+                                    <p style="font-size: 16px;cursor: pointer;text-align: center;">
+                                        首页
+                                    </p>
+                                </li>
+                                <li>
+                                    <p style="font-size: 16px;cursor: pointer;">
+                                        选课中心
+                                    </p>
+                                </li>
+                                <li>
+                                    <p style="font-size: 16px;cursor: pointer;">
+                                        一对一老师
+                                    </p>
+                                </li>
+                                <li>
+                                    <p style="font-size: 16px;cursor: pointer;text-align: center;">
+                                        课后答疑
+                                    </p>
+                                </li>
+                                <li>
+                                    <p style="font-size: 16px;cursor: pointer;text-align: center;">
+                                        关于我们
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sort" style="">
+                <div id="drnk">
+                    <div id="kok" class="qi_wa" style="position: relative;">
+                        <div  class="noni_do" style="background:url(images/sd2.png) 0 0 no-repeat;width: 100%;height: 500px;position: absolute;"></div>
+                        <div class="zpp" style="width: 1024px;height: 500px;min-width: 1024px;margin:0 auto;position: relative;z-index: 10000">
+                            <ul class="qiehuan" style="position: absolute;top:0px;z-index: 1000">
+                                <li class="show" style="display: block;">
+                                    <a>
+                                        <img src="images/sdas3.png" style="width: 1024px;height: 500px;">
+                                    </a>
+                                </li>
+                                <li class="show">
+                                    <a>
+                                        <img src="images/dfsfd4.png" style="width: 1024px;height: 560px;">
+                                    </a>
+                                </li>
+                                <li class="show">
+                                    <a>
+                                        <img src="images/fdgfd5.png" style="width: 1024px;height: 560px;">
+                                    </a>
+                                </li>
+                            </ul>
+                            <ol class="x_biao" style="position: absolute;z-index: 1000;bottom: 60px;">
+                                <p class="weitiao active">
+                                </p>
+                                <p class="weitiao">
+                                </p>
+                                <p class="weitiao">
+                                </p>
+                            </ol>
+                             <div class="ooj" style="position: absolute;width: 231px;height: 139px;float: left;z-index: 1000;right: 50px;bottom: 80px;">
+                                <img src="images/1.png" style="float: left;">
+                                <img src="images/2.png" style="float: right;">
+                            </div>
+                         
+                            <div class="qbi" style="bottom: 243px;width: 100%;height: auto;float: left;">
+                                <iframe id="webi" width=1024 height=54 frameborder=0 scrolling=no src="register2.html"
+                                style="float: right;position: absolute;bottom: 0px;z-index: 20000">
+                                </iframe>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                      <div class="qi_wa" style="position: absolute;">
+                        <div class="noni_do" style="background:url(images/bgggg.png) 0 0 no-repeat;display: none;position: absolute;width: 100%;height: 500px;"></div>
+                          
+                      </div>
+                      <div class="qi_wa" style="position: absolute;">
+                          <div class="noni_do" style="background:url(images/sadas2.png) 0 0 no-repeat;display: none;position: absolute;width: 100%;height: 500px;"></div>
+                      </div>
+                </div>
+                <div id="poss">
+                    <div class="ment">
+                        <img src="images/21312jhk.png" style="margin-left:30px;">
+                        <a style="position: absolute;top:176px;right: 250px;cursor: pointer;">
+                            <img src="images/zi.gif">
+                        </a>
+                        <a style="position: absolute;top:170px;right: 57px;cursor: pointer;">
+                            <img src="images/zitidong.gif">
+                        </a>
+                    </div>
+                    <div class="subject">
+                        <ul style="width:100%;height: 345px;margin:0 auto;">
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/1g.png">
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/23125.png" style="margin-left: 8px;margin-top: 10px;">
+                                <div style="width: 155px;height: 130px;margin:0 auto;">
+                                    <p style="font-size: 12px;color: #333;margin-top: 10px;">
+                                        ①高级教师 一线名师
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 30px;">
+                                        ②严格的教师考评
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 30px;">
+                                        ③对学生学习问题了解透彻
+                                    </p>
+                                </div>
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/1hg.png">
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/76h.png" style="margin-left: 8px;margin-top: 10px;">
+                                <div style="width: 155px;height: 130px;margin:0 auto;">
+                                    <p style="font-size: 12px;color: #333;margin-top: 10px;">
+                                        ①专业的学习困难剖析
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 15px;">
+                                        ②个性的学习方案
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 15px;">
+                                        ③科学的上课时间
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 15px;">
+                                        ④实时检测学习效果
+                                    </p>
+                                </div>
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/213df.png">
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/21f.png" style="margin-left: 8px;margin-top: 10px;">
+                                <div style="width: 155px;height: 130px;margin:0 auto;">
+                                    <p style="font-size: 12px;color: #333;margin-top: 10px;">
+                                        ①足不出户,节省路上时间,保障学生安全
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 15px;">
+                                        ②网络在线一对一互动上课方式
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 15px;">
+                                        ③随时选择名师
+                                    </p>
+                                </div>
+                                <li style="width: 172px;height: 172px;float: left;">
+                                    <img src="images/567hg.png" style="margin-left: 8px;margin-top: 10px;">
+                                    <div style="width: 155px;height: 130px;margin:0 auto;">
+                                        <p style="font-size: 12px;color: #333;margin-top: 10px;">
+                                            ①碎片时间充足利用
+                                        </p>
+                                        <p style="font-size: 12px;color: #333;margin-top: 30px;">
+                                            ②疑难问题随时解决
+                                        </p>
+                                        <p style="font-size: 12px;color: #333;margin-top: 30px;">
+                                            ③一切为了学生学习
+                                        </p>
+                                    </div>
+                                </li>
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/123g.png">
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/2321454h.png" style="margin-left: 8px;margin-top: 10px;">
+                                <div style="width: 155px;height: 130px;margin:0 auto;">
+                                    <p style="font-size: 12px;color: #333;margin-top: 10px;">
+                                        ①学生上课时家长随时听讲
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 10px;">
+                                        ②家长随时与老师沟通
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 15px;">
+                                        ③学生的学习情况家长随时了解
+                                    </p>
+                                </div>
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/1234ff.png">
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/34g.png" style="margin-left: 8px;margin-top: 10px;">
+                                <div style="width: 155px;height: 130px;margin:0 auto;">
+                                    <p style="font-size: 12px;color: #333;margin-top: 10px;">
+                                        ①通过辅导，快速找到学习兴趣
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 10px;">
+                                        ②短暂辅导，快速培养学习习惯
+                                    </p>
+                                    <p style="font-size: 12px;color: #333;margin-top: 15px;">
+                                        ③无压力，有动力，快速提分
+                                    </p>
+                                </div>
+                            </li>
+                            <li style="width: 172px;height: 172px;float: left;">
+                                <img src="images/1231kj.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="miuo">
+                    <div class="feis">
+                        <div class="bo8">
+                            <img src="images/1231k.png" style="margin-left:30px;">
+                        </div>
+                        <div class="part" style="margin-top: 30px;position: relative;">
+                            <img src="images/234298.png">
+                            <div class="biu" style="width: 170px;height: 171px;position: absolute;top:145px;left:318px;overflow: hidden;border-radius: 95px;">
+                                <div id="yzhou" style="position: absolute;top:1px;height: 496px;width: 261px;opacity: 0.3;position: absolute;top:1px;left: -50px;overflow: scroll;">
+                                    <img src="images/sad4.png">
+                                </div>
+                            </div>
+                            <div class="biu2" style="width: 143px;height: 147px;position: absolute;top:190px;left:872px;overflow: hidden;border-radius: 95px;">
+                                <div id="yzhou2" style="position: absolute;top:1px;height: 496px;width: 261px;opacity: 0.3;position: absolute;top:1px;left: -50px;overflow: scroll;">
+                                    <img src="images/sad4.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="zhaop">
+                    <div class="lop">
+                        <div class="dss" style="width: 1024px;height: 279px;margin:0 auto;">
+                            <img src="images/233_03.png" style="width: 100%;height: 247px;margin:0 auto;">
+                        </div>
+                        <ul class="dps" style="width: 969px;height: 1171px;margin:0 auto;">
+                            <div class="sss" style="width: 950px;height: 380px;border-bottom: 1px solid #e5e5e5;margin:0 auto;">
+                                <li style="width: 321px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/course_1.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 154px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;">
+                                            小学一年级
+                                        </p>
+                                        <p style="width: 154px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 32px;">
+                                            语文
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 33px;border-bottom: 2px solid #e5e5e5;">
+                                            <div style="width: 135px;height: 16px;float: left;margin-top: 7px;">
+                                                <div style="width: 26px; height: 16px;float: left;">
+                                                    <img src="images/jjk_03.png" style="width: 19px;height: 16px;">
+                                                </div>
+                                                <div style="width: 102px;height: 16px;float: right;line-height: 16px;">
+                                                    <p style="font-size: 12px;color: #686868;">
+                                                        3666人已学习
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                刚升入小学的学生还没有学习意识，全靠老师的指点与帮助这个时间时候培养兴趣的好阶段
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 321px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/course_2.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 154px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;">
+                                            小学三年级
+                                        </p>
+                                        <p style="width: 154px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 32px;">
+                                            英语
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 33px;border-bottom: 2px solid #e5e5e5;">
+                                            <div style="width: 135px;height: 16px;float: left;margin-top: 7px;">
+                                                <div style="width: 26px; height: 16px;float: left;">
+                                                    <img src="images/jjk_03.png" style="width: 19px;height: 16px;">
+                                                </div>
+                                                <div style="width: 102px;height: 16px;float: right;line-height: 16px;">
+                                                    <p style="font-size: 12px;color: #686868;">
+                                                        5986人已学习
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                学生刚开始接触英语，需要英语老师的帮助与监督，这个阶段是培养学习英语的好时机
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 308px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/course_3.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 154px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;">
+                                            小学六年级
+                                        </p>
+                                        <p style="width: 154px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 32px;">
+                                            数学
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 33px;border-bottom: 2px solid #e5e5e5;">
+                                            <div style="width: 135px;height: 16px;float: left;margin-top: 7px;">
+                                                <div style="width: 26px; height: 16px;float: left;">
+                                                    <img src="images/jjk_03.png" style="width: 19px;height: 16px;">
+                                                </div>
+                                                <div style="width: 102px;height: 16px;float: right;line-height: 16px;">
+                                                    <p style="font-size: 12px;color: #686868;">
+                                                        8412人已学习
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                学生开始面临小升初，开始紧张 需要家长和老师的共同帮助
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="sss" style="width: 950px;height: 380px;border-bottom: 1px solid #e5e5e5;margin:0 auto;">
+                                <li style="width: 321px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/course_4.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 154px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;">
+                                            初中一年级
+                                        </p>
+                                        <p style="width: 154px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 32px;">
+                                            数学
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 33px;border-bottom: 2px solid #e5e5e5;">
+                                            <div style="width: 135px;height: 16px;float: left;margin-top: 7px;">
+                                                <div style="width: 26px; height: 16px;float: left;">
+                                                    <img src="images/jjk_03.png" style="width: 19px;height: 16px;">
+                                                </div>
+                                                <div style="width: 102px;height: 16px;float: right;line-height: 16px;">
+                                                    <p style="font-size: 12px;color: #686868;">
+                                                        9666人已学习
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                学生刚从小学升入初中，学习方式从保姆式教学升到自主式教学，再有学习科目的增多，学习压力的加大，学生或不知所措，这个时段是培养学生自主性学习的最好时机
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 321px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/course_5.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 154px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;">
+                                            初中二年级
+                                        </p>
+                                        <p style="width: 154px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 32px;">
+                                            物理
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 33px;border-bottom: 2px solid #e5e5e5;">
+                                            <div style="width: 135px;height: 16px;float: left;margin-top: 7px;">
+                                                <div style="width: 26px; height: 16px;float: left;">
+                                                    <img src="images/jjk_03.png" style="width: 19px;height: 16px;">
+                                                </div>
+                                                <div style="width: 102px;height: 16px;float: right;line-height: 16px;">
+                                                    <p style="font-size: 12px;color: #686868;">
+                                                        8416人已学习
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                初二新加入的一门物理课，需要学生勤动脑，勤观察 培养细心认真的性格
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 308px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/course_6.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 154px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;">
+                                            初中三年级
+                                        </p>
+                                        <p style="width: 154px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 32px;">
+                                            化学
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 33px;border-bottom: 2px solid #e5e5e5;">
+                                            <div style="width: 135px;height: 16px;float: left;margin-top: 7px;">
+                                                <div style="width: 26px; height: 16px;float: left;">
+                                                    <img src="images/jjk_03.png" style="width: 19px;height: 16px;">
+                                                </div>
+                                                <div style="width: 102px;height: 16px;float: right;line-height: 16px;">
+                                                    <p style="font-size: 12px;color: #686868;">
+                                                        345342人已学习
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                马上面临中考的同时，加入了一门主课，化学，需要学生自己多找时间学习，这是培养学生学习习惯的好方法
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="sss" style="width: 950px;height: 380px;margin:0 auto;">
+                                <li style="width: 321px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/course_7.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 154px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;">
+                                            高中一年级
+                                        </p>
+                                        <p style="width: 154px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 32px;">
+                                            物理
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 33px;border-bottom: 2px solid #e5e5e5;">
+                                            <div style="width: 135px;height: 16px;float: left;margin-top: 7px;">
+                                                <div style="width: 26px; height: 16px;float: left;">
+                                                    <img src="images/jjk_03.png" style="width: 19px;height: 16px;">
+                                                </div>
+                                                <div style="width: 102px;height: 16px;float: right;line-height: 16px;">
+                                                    <p style="font-size: 12px;color: #686868;">
+                                                        46546人已学习
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                从初中升入高中，学习方式由从自主性学习变化到点拨式教学，高中学习难度增大，老师邮详细讲解变化到点拨讲解，这要求学生学习的自主性要更强
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 321px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/course_8.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 154px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;">
+                                            高中二年级
+                                        </p>
+                                        <p style="width: 154px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 32px;">
+                                            数学
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 33px;border-bottom: 2px solid #e5e5e5;">
+                                            <div style="width: 135px;height: 16px;float: left;margin-top: 7px;">
+                                                <div style="width: 26px; height: 16px;float: left;">
+                                                    <img src="images/jjk_03.png" style="width: 19px;height: 16px;">
+                                                </div>
+                                                <div style="width: 102px;height: 16px;float: right;line-height: 16px;">
+                                                    <p style="font-size: 12px;color: #686868;">
+                                                        9798人已学习
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                高二很关键的一年，数学难度大幅度增加还需要学生更勤奋 多与老师交流 探讨
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 308px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/course_9.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 154px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;">
+                                            高中三年级
+                                        </p>
+                                        <p style="width: 154px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 32px;">
+                                            英语
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 33px;border-bottom: 2px solid #e5e5e5;">
+                                            <div style="width: 135px;height: 16px;float: left;margin-top: 7px;">
+                                                <div style="width: 26px; height: 16px;float: left;">
+                                                    <img src="images/jjk_03.png" style="width: 19px;height: 16px;">
+                                                </div>
+                                                <div style="width: 102px;height: 16px;float: right;line-height: 16px;">
+                                                    <p style="font-size: 12px;color: #686868;">
+                                                        5654人已学习
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                面临高考，学生紧张，担心，关键的一年关系到高考学生需要努力学习的同时适当放松自己
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div id="kkh">
+                    <div class="wioi">
+                        <div class="dss" style="width: 928px;height: 279px;margin:30px auto;">
+                            <img src="images/tu.png" style="width: 100%;height: 247px;">
+                        </div>
+                        <div style="width: 960px;height: 794px;margin:0 auto">
+                            <ul style="width: auto;height: 53px;border:1px solid #fff;margin:0 auto;">
+                                <div style="width: 1024px;margin:0 auto;">
+                                    <li style="width: auto;height: 54px;float: left;">
+                                        <p style="width: 110px;font-size: 16px;line-height: 54px;text-align: center;font-weight: bold;color: #333333;">
+                                            班型
+                                        </p>
+                                    </li>
+                                    <li style="width: auto;height: 54px;float: left;margin-left: 60px;">
+                                        <p style="width: 110px;font-size: 16px;line-height: 54px;text-align: center;font-weight: bold;color: #333333;">
+                                            适用人群
+                                        </p>
+                                    </li>
+                                    <li style="width: auto;height: 54px;float: left;margin-left: 65px;">
+                                        <p style="width: 110px;font-size: 16px;line-height: 54px;text-align: center;font-weight: bold;color: #333333;">
+                                            服务内容
+                                        </p>
+                                    </li>
+                                    <li style="width: auto;height: 54px;float: left;margin-left: 70px;">
+                                        <p style="width: 110px;font-size: 16px;line-height: 54px;text-align: center;font-weight: bold;color: #333333;">
+                                            价格
+                                        </p>
+                                    </li>
+                                    <li style="width: auto;height: 54px;float: left;">
+                                        <p style="width: 110px;font-size: 16px;line-height: 54px;text-align: center;font-weight: bold;color: #333333;">
+                                            免费试听
+                                        </p>
+                                    </li>
+                                    <li style="width: auto;height: 54px;float: left;margin-left:20px;">
+                                        <p style="width: 110px;font-size: 16px;line-height: 54px;text-align: center;font-weight: bold;color: #333333;">
+                                            服务内容
+                                        </p>
+                                    </li>
+                                </div>
+                            </ul>
+                            <div style="width: auto;height: 244px;border:1px solid #fff;margin:0 auto;">
+                                <ul style="width: 1024px;height: 134px;margin:50px auto;">
+                                    <li style="width: auto;height: 134px;text-align: left;line-height: 134px;float: left;margin-left: 10px;min-width: 120px;">
+                                        <p style="font-size: 14px;color: #5c5c5c;">
+                                            小升冲刺课程班
+                                        </p>
+                                    </li>
+                                    <li style="width: 160px;height: 134px;float: left;margin-left: 30px;">
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            1.学习不能独立，不能自己安排好学习目标
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            2.学习压力较大，紧张
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            3.有基础，却无法突破瓶颈
+                                            </br>
+                                        </span>
+                                    </li>
+                                    <li style="width: 150px;height: 134px;float: left;margin-left: 35px;">
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            1.全方位的个性测评
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            2.老师一对一在线授课30节
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            3.考前模拟解析
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            4.每周阶段性测试
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            5.学习顾问阶段回访
+                                            </br>
+                                        </span>
+                                    </li>
+                                    <li style="width: auto;height: 134px;float: left;font-size: 14px;text-align: center;line-height: 134px;color: red;margin-left: 43px;">
+                                        <span>
+                                            ￥
+                                        </span>
+                                        <span>
+                                            88
+                                        </span>
+                                    </li>
+                                    <li style="width: auto;height: 134px;float: left;font-size: 14px;text-align: center;line-height: 134px;margin-left: 65px;">
+                                        <a style="font-size: 14px; text-decoration:underline;color: #6b6b6b;">
+                                            试听
+                                        </a>
+                                    </li>
+                                    <li style="width: auto;height: 134px;float: left;font-size: 14px;margin-left: 20px;">
+                                        <div style="width: 94px;height: 33px;background-color: #785600;margin-top: 50px;margin-left: 48px;">
+                                            <p class="zgu" style="font-size: 16px;color:#fff;text-align: center;line-height: 33px;cursor: pointer;">
+                                                立即购买
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="width: auto;height: 244px;border:1px solid #fff;margin:0 auto;">
+                                <ul style="width: 1024px;height: 134px;margin:50px auto;">
+                                    <li style="width: auto;height: 134px;text-align: left;line-height: 134px;float: left;margin-left: 10px;min-width: 120px;">
+                                        <p style="font-size: 14px;color: #5c5c5c;">
+                                            初升高冲刺加分班
+                                        </p>
+                                    </li>
+                                    <li style="width: 160px;height: 134px;float: left;margin-left: 30px;">
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            1.多次考试成绩仍不理想
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            2.自制力薄弱，需要严格监督
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            3.自学能力差，学习方法欠缺
+                                            </br>
+                                        </span>
+                                    </li>
+                                    <li style="width: 150px;height: 134px;float: left;margin-left: 35px;">
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            1.全方位的个性测评
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            2.资深毕业班教师一对一在线授课50节
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            3.中考命题专家帮你找到考试规律和趋势
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            4.每周阶段性测试
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            5.一线名师传授考试重点和考讯
+                                            </br>
+                                        </span>
+                                    </li>
+                                    <li style="width: auto;height: 134px;float: left;font-size: 14px;text-align: center;line-height: 134px;color: red;margin-left: 43px;">
+                                        <span>
+                                            ￥
+                                        </span>
+                                        <span>
+                                            68
+                                        </span>
+                                    </li>
+                                    <li style="width: auto;height: 134px;float: left;font-size: 14px;text-align: center;line-height: 134px;margin-left: 65px;">
+                                        <a style="font-size: 14px; text-decoration:underline;color: #6b6b6b;">
+                                            试听
+                                        </a>
+                                    </li>
+                                    <li style="width: auto;height: 134px;float: left;font-size: 14px;margin-left: 20px;">
+                                        <div style="width: 94px;height: 33px;background-color: #785600;margin-top: 50px;margin-left: 48px;">
+                                            <p class="zgu" style="font-size: 16px;color:#fff;text-align: center;line-height: 33px;cursor: pointer;">
+                                                立即购买
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="width: auto;height: 380px;border:1px solid #fff;margin:0 auto;">
+                                <ul style="width: 1024px;height: 134px;margin:50px auto;">
+                                    <li style="width: auto;height: 134px;text-align: left;line-height: 134px;float: left;margin-left: 10px;min-width: 120px;">
+                                        <p style="font-size: 14px;color: #5c5c5c;">
+                                            高考冲刺保分封闭班
+                                        </p>
+                                    </li>
+                                    <li style="width: 160px;height: 134px;float: left;margin-left: 30px;">
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            1.多次考试成绩仍不理想
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            2.急需短时间内考出好成绩
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            3.科目分数不平衡
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            4.有基础，却无法突破瓶颈
+                                            </br>
+                                        </span>
+                                    </li>
+                                    <li style="width: 150px;height: 134px;float: left;margin-left: 30px;">
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            1.全方位的个性测评
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            2.资深教师一对一在线授课70节
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            3.教师分析归纳，分类，总结历年高考命题趋势，帮助考生集中精力重点突破得分瓶颈
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            4.瞄准高考考察的重点，难点，疑点，易错点详细梳理，帮助考生快速斩获得分点，成绩在上一层楼
+                                            </br>
+                                        </span>
+                                        <span style="font-size: 14px;color: #5c5c5c;">
+                                            5.解析典型题，抓住常考题，突破难考题举一反三，触类旁通，帮助学生去的满意的成绩
+                                            </br>
+                                        </span>
+                                    </li>
+                                    <li style="width: auto;height: 134px;float: left;font-size: 14px;text-align: center;line-height: 134px;color: red;margin-left: 43px;">
+                                        <span>
+                                            ￥
+                                        </span>
+                                        <span>
+                                            48
+                                        </span>
+                                    </li>
+                                    <li style="width: auto;height: 134px;float: left;font-size: 14px;text-align: center;line-height: 134px;margin-left: 65px;">
+                                        <a style="font-size: 14px; text-decoration:underline;color: #6b6b6b;">
+                                            试听
+                                        </a>
+                                    </li>
+                                    <li style="width: auto;height: 134px;float: left;font-size: 14px;margin-left: 20px;">
+                                        <div style="width: 94px;height: 33px;background-color: #785600;margin-top: 50px;margin-left: 48px;">
+                                            <p class="zgu" style="font-size: 16px;color:#fff;text-align: center;line-height: 33px;cursor: pointer;">
+                                                立即购买
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="anneimo">
+                    <div class="dss" style="width: 1050px;height: 247px;margin:0 auto;">
+                        <img src="images/dfsd21_04.png" style="width: 927px;height: 247px;margin-top:30px;margin-left: 60px; ">
+                    </div>
+                    <div style="width: 1050px;height: 247px;margin:0 auto;">
+                        <iframe id="sof" src="photowall.html" frameborder=0 scrolling=no style="width: 1050px;height: 700px;">
+                        </iframe>
+                    </div>
+                </div>
+                <div id="zzwoe">
+                    <div style="width: 1024px;height:1000px;margin:0 auto;">
+                        <div class="dss" style="width: 928px;height: 300px;margin:30px auto;">
+                            <img src="images/TUI.png" style="width: 100%;height: 247px;">
+                        </div>
+                        <iframe id="tlist" width=1024px height=700px; frameborder=0 scrolling=no
+                        src="ondate.html" style="margin:0 auto;margin-top: -30px;">
+                        </iframe>
+                    </div>
+                </div>
+                <div id="kecshi">
+                    <div style="width: 1024px;margin:0 auto;height: 1085px;">
+                        <div class="oyu" style="width: 928px;height: 308px;margin:15px auto;">
+                            <img src="images/hh77.png">
+                        </div>
+                        <ul class="pent" style="width: 1024px;height: 747px;margin:0 auto;">
+                            <div class="ddd" style="width: 950px;height: 380px;margin:0 auto;">
+                                <li style="width: 321px;height: 376px;float: left;">
+                                   <embed src="movie.ogg" controls="controls"  style="width: 300px;height: 150px;">
+                                    <embed>
+                                    
+                                    <div style="width: 307px;height: 45px;border-bottom: 2px solid #e5e5e5;">
+                                        
+                                        <p style="width: 142px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;line-height: 43px;">
+                                            小学一年级
+                                        </p>
+                                        <p style="width: 142px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 43px;">
+                                            语文
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                刚升入小学的学生还没有学习意识，全靠老师的指点与帮助这个时间时候培养兴趣的好阶段
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>q
+                                <li style="width: 321px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 179px;position: absolute;background-color: #000;opacity: 0.7;">
+                                        <img src="images/9jk7.png" style="position: absolute;top:41%;left:45%;">
+                                    </div>
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/vdv_03.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 142px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;line-height: 43px;">
+                                            小学三年级
+                                        </p>
+                                        <p style="width: 142px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 43px;">
+                                            英语
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                学生刚开始接触英语，需要英语老师的帮助与监督，这个阶段是培养学习英语的好时机
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 308px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 179px;position: absolute;background-color: #000;opacity: 0.7;">
+                                        <img src="images/9jk7.png" style="position: absolute;top:41%;left:45%;">
+                                    </div>
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/vcvc_03.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 142px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;line-height: 43px;">
+                                            初中一年级
+                                        </p>
+                                        <p style="width: 142px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 43px;">
+                                            数学
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                学生刚从小学升入初中，学习方式从保姆式教学升到自主式教学，再有学习科目的增多，学习压力的加大，学生或不知所措，这个时段是培养学生自主性学习的最好时机
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="ddd" style="width: 950px;height: 380px;margin:0 auto;">
+                                <li style="width: 321px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 179px;position: absolute;background-color: #000;opacity: 0.7;">
+                                        <img src="images/9jk7.png" style="position: absolute;top:41%;left:45%;">
+                                    </div>
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/bgf3_03.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 142px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;line-height: 43px;">
+                                            高中一年级
+                                        </p>
+                                        <p style="width: 142px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 43px;">
+                                            物理
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                从初中升入高中，学习方式由从自主性学习变化到点拨式教学，高中学习难度增大，老师邮详细讲解变化到点拨讲解，这要求学生学习的自主性要更强
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 321px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 179px;position: absolute;background-color: #000;opacity: 0.7;">
+                                        <img src="images/9jk7.png" style="position: absolute;top:41%;left:45%;">
+                                    </div>
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/vdv_03.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 142px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;line-height: 43px;">
+                                            高中二年级
+                                        </p>
+                                        <p style="width: 142px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 43px;">
+                                            数学
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                高二很关键的一年，数学难度大幅度增加还需要学生更勤奋 多与老师交流 探讨
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 308px;height: 376px;float: left;">
+                                    <div style="width: 307px;height: 179px;position: absolute;background-color: #000;opacity: 0.7;">
+                                        <img src="images/9jk7.png" style="position: absolute;top:41%;left:45%;">
+                                    </div>
+                                    <div style="width: 307px;height: 223px;border-bottom: 2px solid #e5e5e5;">
+                                        <img src="images/vcvc_03.png" style="width: 307px;height: 180px;">
+                                        <p style="width: 142px;height: 43px;font-size: 22px;font-weight: bold;color: #333;float: left;line-height: 43px;">
+                                            高中三年级
+                                        </p>
+                                        <p style="width: 142px;height: 32px;font-size: 22px;color: #333;float: left;line-height: 43px;">
+                                            英语
+                                        </p>
+                                    </div>
+                                    <div style="width: 307px;height: 152px;">
+                                        <div style="width: 307px;height: 57px;float: left;margin-top: 15px;">
+                                            <p style="font-size: 14px;color:#8f8f8f;">
+                                                面临高考，学生紧张，担心，关键的一年关系到高考学生需要努力学习的同时适当放松自己
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                    </div>
+                    <div id="guangw" style="width: 100%;height: 170px;margin:0 auto;min-width: 1024px;background: url(images/231.gif) 0 0 no-repeat;background-size: 100%;float: left;">
+                        <div style="width:536px;height: 44px;margin:100px auto;cursor: pointer;">
+                            <img src="images/or.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sort xk" style="display: none;">
+                <iframe width=100% height=4330px; frameborder=0 scrolling=no src="online.html"
+                style="">
+                </iframe>
+            </div>
+            <div class="sort otuo" style="display: none;">
+                <iframe width=100% height=2700px; frameborder=0 scrolling=no src="soloteacher.html"
+                style="">
+                </iframe>
+            </div>
+            <div class="sort dayi" style="display: none;">
+                <iframe width=100% height=2400px; frameborder=0 scrolling=no src="Mentoring.html"
+                style="">
+                </iframe>
+            </div>
+            <div class="sort guanyu" style="display: none;">
+                <iframe width=100% height=1020px; frameborder=0 scrolling=no src="AboutUs.html"
+                style="">
+                </iframe>
+            </div>
+            <div id="far" style="width: 100%;height: 300px;min-width: 1024px;background: #1c1e20;float: left;margin-top: -3px;">
+                <ul style="width: 1024px;height: 250px;margin:0 auto;">
+                    <li style="width: 200px;margin-top: 20px;float: left;">
+                        <p style="font-size: 22px;color: #fff;">
+                            关于我们
+                        </p>
+                        <p style="font-size: 17px;color: #fff;margin-top: 37px;">
+                            公司简介
+                        </p>
+                    </li>
+                    <li style="width: 200px;margin-top: 20px;float: left;">
+                        <p style="font-size: 22px;color: #fff;">
+                            友情链接
+                        </p>
+                        <p style="font-size: 17px;color: #fff;margin-top: 18px;">
+                            <a style="text-decoration:none;color: #fff;" href="http://www.dearedu.com/"
+                            target="view_window">
+                                www.dearedu.com
+                            </a>
+                        </p>
+                        <p style="font-size: 17px;color: #fff;margin-top: 10px;">
+                            <a style="text-decoration:none;color: #fff;" href="http://www.afanti100.com/"
+                            target="view_window">
+                                www.afanti100.com
+                            </a>
+                        </p>
+                        <p style="font-size: 17px;color: #fff;margin-top: 10px;">
+                            <a style="text-decoration:none;color: #fff;" href="http://www.sooker.com/"
+                            target="view_window">
+                                www.sooker.com
+                            </a>
+                        </p>
+                    </li>
+                    <li style="width: 300px;margin-top: 20px;float: left;">
+                        <p style="font-size: 22px;color: #fff;">
+                            联系我们
+                        </p>
+                        <p style="font-size: 17px;color: #fff;margin-top: 20px;">
+                            服务反馈：service@vcread.com
+                        </p>
+                        <p style="font-size: 17px;color: #fff;margin-top: 10px;">
+                            教师合作：business@vcread.com
+                        </p>
+                        <p style="font-size: 17px;color: #fff;margin-top: 10px;">
+                            版权投诉：banquan@vcread.com
+                        </p>
+                    </li>
+                    <li style="width: 240px;margin-top: 20px;float: left;margin-left: 20px;">
+                        <p style="font-size: 22px;color: #fff;">
+                            社交账号
+                        </p>
+                        <div style="width: 500px;height: 35px;margin-top: 10px;">
+                            <div style="width: 145px;height: 34px;float: left;">
+                                <img src="images/weibo.png" style="float: left;">
+                                <p style="font-size: 20px;float: left;color: #fff;line-height: 32px;height: 20px;width: auto;margin-left: 10px;">
+                                    官方微博
+                                </p>
+                            </div>
+                            <div style="width: 145px;height: 34px;float: left;margin-left: 20px;">
+                                <img src="images/weixinpng.png" style="float: left;">
+                                <p style="font-size: 20px;float: left;color: #fff;line-height: 32px;height: 20px;width: auto;margin-left: 10px;">
+                                    官方微信
+                                </p>
+                            </div>
+                        </div>
+                        <div style="width: 500px;height: 76px;margin-top: 10px;">
+                            <div style="float: left;width: 166px;height: 76px;">
+                                <img src="images/qrcode_for_gh_c25c54c52931_430.jpg" style="width: 76px;height: 76px;">
+                            </div>
+                            <div style="float: left;width: 166px;height: 76px;">
+                                <img src="images/5675gh.png" style="width: 76px;height: 76px;">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div style="width: 307px;height: 38px;margin:0 auto;">
+                    <p style="color: #fff;font-size: 16px;">
+                        版权所有：北京天智通达信息技术有限公司
+                    </p>
+                    <p style="color: #fff;font-size: 16px;margin:0 auto;width: 280px;">
+                        copyright ● 2015京ICP证088888号
+                    </p>
+                </div>
+            </div>
+            </div>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+    </body>
+    <script src="files/js/index.js">
+    </script>
+
+</html>

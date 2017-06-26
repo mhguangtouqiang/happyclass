@@ -1,0 +1,42 @@
+body {
+	font-family: 'Microsoft YaHei'
+}
+
+#out {
+	width: 100%;
+	height: auto;
+/* border:1px solid red; */
+	;background-color: #fff;
+}
+
+.Nav {
+	width: 100%;
+	height: auto;
+/* border:1px solid orange; */
+}
+
+.dso {
+	width: 1024px;
+	height: 87px;
+	margin: 10px auto;
+/* border:1px solid blue; */
+	min-width: 1024px;
+}
+
+.log {
+	float: left;
+	width: 349px;
+	height: 56px;
+}
+
+.line {
+	float: right;
+	width: 444px;
+	height: 59px;
+}
+
+#drnk {
+	width: 100%;
+	height: auto;
+	float: left;
+}

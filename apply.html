@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一对一辅导报名页面</title>
+	<link rel="stylesheet" href="files/css/reset.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<script src="files/js/zepto.js"></script>
+	<script src="files/js/ort.js"></script>
+	<style>
+	.css{-webkit-touch-callout: none}
+	body{font-family:Helvetica;}
+	html,body,#pentkil{width:640px;height:1138px;}
+	#pentkil{background:url(images/bejin123g.png) 0 0 no-repeat;background-size:100%;position: relative;}
+	.sdaw{width: 515px;height: 674px;background-color: #fff;opacity: 0.3;position:absolute;left: 10%;top:15%;}
+	.olog{position: absolute;top:0px;width: 336px;height: 312px;}
+	.wiq{width: 515px;height: 287px;position: relative;left: 10%;top:15%;}
+	.olog2{position: absolute;top:30%;left:25%;width: 264px;height: 66px;}
+	.olog3{position: absolute;top:55%;left:66%;}
+	.texl{width: 515px;height: 60px;position: absolute;bottom:-10px;left: 8%;min-height: 96px;}
+	.jihl{width: 515px;height: 287px;position: relative;left: 10%;top:15%;}
+
+
+	</style>
+</head>
+<body>
+	<div id="pentkil">
+		<div class="sdaw">
+			
+		</div>
+		<div class="olog">
+				<img src="images/34124.png">
+			</div>
+	 
+		<div class="wiq">
+			<div class="olog2">
+				<img src="images/123hg.png">
+			</div>
+			<div class="olog3">
+				<img src="images/asdas4tk.png">
+			</div>
+			<div class="texl">
+				<img src="images/31231.png" style="width: 450px;height: 80px;">
+			</div>
+		</div>
+
+		<ul class="jihl">
+			<li style="width: 437px;height: 57px;position: absolute;left: 7%;top:10%;">
+				<input class="er" type="text" placeholder="手机号：" maxlength="11"  style="color:#ccc;font-size: 2em;width: 435px;height: 46px;border:1px solid #ccc;color: #282828;padding-left: 10px;">
+			</li>
+			<li style="width: 437px;height: 57px;position: absolute;left: 7%;top:41%;">
+				<input class="er" maxlength="6"  type="text" placeholder="姓名：" style="color:#ccc;font-size: 2em;width: 435px;height: 46px;border:1px solid #ccc;color: #282828;padding-left: 10px;">
+			</li>
+			<li style="width: 437px;height: 57px;position: absolute;left: 7%;top:71%;">
+				<input class="er"  type="text" placeholder="年龄："  maxlength="2"  style="color:#ccc;font-size: 2em;width: 435px;height: 46px;border:1px solid #ccc;color: #282828;padding-left: 10px;">
+			</li>
+
+		</ul>
+		<div class="tyk" style="width: 68%;height: 60px;position: relative;left: 16%;top:16%;background-color: #4292ed;border-radius: 5px;text-align: center;line-height: 60px;cursor: pointer;">
+			<p style="color: #fff;font-size: 2em;">提交</p>
+		</div>
+	</div>
+	
+</body>
+<script>
+$(function () {
+	$('.tyk').click(function () {
+		$('.tyk').css('background-color','#f2ca57')
+	})
+})
+
+//获取焦点边框高亮
+			$('.er').on("focus",function(){
+				var i=$(this).index();
+						
+				$(this).css({ border: "solid 1px #3c8dcc", 'boxShadow': "0 0 20px #3c8dcc" });
+			})
+			$('.er').on("blur",function(){
+				$(this).css({ border: "solid 1px #ccc", 'boxShadow': "0 0 0px #ccc" });
+			})
+
+	/*$(function () {
+		$('#pentkil').height(window.screen.height)
+	})*/
+</script>
+</html>

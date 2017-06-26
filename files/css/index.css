@@ -1,0 +1,264 @@
+@charset "utf-8";
+/*=========================home page==========================*/
+
+	/* body{position: relative;} */
+	
+body {
+	font-family: 'Microsoft YaHei'
+}
+
+html {
+	overflow-x: hidden;
+}
+
+#all {
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	min-width: 1024px;
+}
+
+#out {
+	width: 100%;
+	height: 75px;
+/* border:1px solid red; */
+	float: left;
+	background-color: #fff;
+}
+
+.Nav {
+	width: 100%;
+	height: auto;
+/* border:1px solid orange; */
+}
+
+.dso {
+	width: 1024px;
+	height: 87px;
+	margin: 10px auto;
+/* border:1px solid blue; */
+	min-width: 1024px;
+}
+
+.log {
+	float: left;
+	width: 349px;
+	height: 56px;
+}
+
+.line {
+	float: right;
+	width: 444px;
+	height: 59px;
+}
+
+#drnk {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+#menu {
+	width: 100%;
+	height: 50px;
+	min-width: 1024px;
+	float: left;
+}
+
+.ois {
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	background-color: #1c1c1c;
+	min-width: 1024px;
+}
+
+.center {
+	width: 522px;
+	height: 50px;
+	float: right;
+	background-color: #151515;
+}
+
+.opp li {
+	width: 100px;
+	height: 16px;
+	float: left;
+	color: #fff;
+}
+	/* #tt7{color:#fff;} */
+	
+
+.qi_wa {
+	width: 100%;
+	height: 500px;
+	float: left;
+
+}
+
+
+.qiehuan {
+	width: 1024px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+.qiehuan li {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+	width: 100%;
+	height: 533px;
+}
+
+.qiehuan li img {
+	width: 100%;
+	height: 535px;
+}
+
+.x_biao {
+	width: 170px;
+	height: 40px;
+/* border: 1px solid blue;  */
+	position: relative;
+	bottom: 88px;
+	left: 44%;
+}
+
+.x_biao .weitiao {
+	margin-top: 4px;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 10px 10px;
+	cursor: pointer;
+	background: url(../../images/06_05.png) no-repeat;
+}
+
+.x_biao  .active {
+	width: 20px;
+	height: 20px;
+	margin-top: 6px;
+	background: url(../../images/06_03.png) no-repeat;
+}
+
+#poss {
+	width: 100%;
+	height: 750px;
+	float: left;
+	background-color: #fff;
+	min-width: 1024px;
+}
+
+#poss .ment {
+	width: 1024px;
+	height: auto;
+	margin: 37px auto;
+	min-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 30px;
+}
+
+.subject {
+	width: 1045px;
+	height: auto;
+	margin: 20px auto;
+	min-width: 1024px;
+}
+
+#miuo {
+	width: 100%;
+	height: 750px;
+	float: left;
+	min-width: 1024px;
+	background: #333;
+}
+
+#miuo .feis {
+	width: 1024px;
+	height: 664px;
+	margin: 37px auto;
+}
+
+.feis .bo8 {
+	width: 1024px;
+	height: auto;
+	margin: 37px auto;
+	min-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 30px;
+}
+
+#zhaop {
+	width: 100%;
+	height: 1490px;
+	background-color: #fff;
+	float: left;
+	min-width: 1024px;
+}
+
+#zhaop .lop {
+	width: 1024px;
+	height: 1458px;
+	margin: 30px auto;
+/* border:1px solid orange; */
+}
+
+#kkh {
+	width: 100%;
+	height: 1340px;
+	float: left;
+	min-width: 1024px;
+	background: #ffb700;
+}
+
+#kkh .wioi {
+	width: 1024px;
+	height: 1135px;
+	margin: 0 auto;
+	min-width: 1024px;
+}
+
+#anneimo {
+	width: 100%;
+	height: 965px;
+	float: left;
+	background-color: #fff;
+	min-width: 1024px;
+}
+
+#zzwoe {
+	width: 100%;
+	height: 1070px;
+	float: left;
+	background: #004da4;
+}
+
+#kecshi {
+	width: 100%;
+	height: 1272px;
+	float: left;
+	background-color: #fff;
+}
+
+.colorw p {
+	color: #f0ec5c;
+}
+#ch_1{
+	width: 100%;
+	height: 585px;
+	float: left;
+	border-top:1px solid #000;
+	margin:0 auto;
+
+}
+
+/*==========================home page===========================*/
+
+
+
+	

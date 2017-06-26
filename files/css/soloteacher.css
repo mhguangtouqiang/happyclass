@@ -1,0 +1,57 @@
+body {
+	font-family: 'Microsoft YaHei'
+}
+
+#out {
+	width: 1024px;
+	height: 152px;
+	margin: 0 auto;
+	background: url(../../images/123123gbdf.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+
+#screen {
+	width: 1024px;
+	height: 40px;
+	margin: 30px auto;
+}
+
+#teacher {
+	width: 1024px;
+	height: 2030px;
+	float: left;
+	margin-top: 40px;
+}
+
+.oxu2 li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin-left: 6px;
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	background: #d9d9d9;
+	cursor: pointer;
+	-webkit-user-select: none;
+}
+
+.oxu2 .ys2 {
+	background: #ffffff;
+}
+
+#puios .yss {
+	color: #ed6912;
+}
+.iosic .yss2 {
+	color: #ed6912;
+}
+
+#qosic .yss3 {
+	color: #ed6912;
+}
+#bosic .yss4 {
+	color: #ed6912;
+}
+
+
